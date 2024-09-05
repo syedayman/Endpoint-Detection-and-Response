@@ -1,5 +1,7 @@
 # EDR Home Lab: C2 Attack and Defense 
-This project simulates an attack from a Commmand & Control (C2) server using 'Sliver' on a Windows Endpoint that utilizes the LimaCharlie EDR solution.
+This project simulates an attack from a Commmand & Control (C2) server using 'Sliver' on a Windows Endpoint that utilizes the LimaCharlie EDR solution. 
+
+[Eric Capuano's Guide](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part-1e0)
 
 ## Lab Environment
 C2 server - Ubuntu Server 22.04.01 iso running on VMware
@@ -75,4 +77,13 @@ Trying to run the same `vssadmin delete shadows /all` command again will trigger
 
 ![Screenshot 2024-09-05 180204](https://github.com/user-attachments/assets/4e854265-f7ee-4b5a-b808-acc8863da30c)
 
+## YARA Scanning 
+We can configure LC to detect file system and process activities using YARA rules. Add a new YARA rule from the UK NCSC Advisory [here](https://www.ncsc.gov.uk/files/Advisory-further-TTPs-associated-with-SVR-cyber-actors.pdf)
+
+![Screenshot 2024-09-05 183153](https://github.com/user-attachments/assets/d2049c50-c255-4f73-b0ee-cabeeb3ebddf)
+
+Access the Sensor Console to manually run sensor commands against the endpoint. Run the command `yara_scan hive://yara/sliver -f C:\Users\User\Downloads\[payload_name].exe` and we can now observe detections.
+
+![Screenshot 2024-09-05 183537](https://github.com/user-attachments/assets/50e448db-bc5d-4d9e-858b-37875273202f)
+![Screenshot 2024-09-05 183614](https://github.com/user-attachments/assets/59604928-785c-4598-ae02-6e0887c7c880)
 
