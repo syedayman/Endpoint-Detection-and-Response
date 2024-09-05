@@ -5,6 +5,7 @@ This project simulates an attack from a Commmand & Control (C2) server using 'Sl
 
 ## Lab Environment
 C2 server - Ubuntu Server 22.04.01 iso running on VMware
+
 victim - Windows 11 VM with a sensor linked to LimaCharlie running on VMware
 
 ## Machines Setup
