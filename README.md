@@ -4,9 +4,9 @@ This project simulates an attack from a Commmand & Control (C2) server using 'Sl
 [Eric Capuano's Guide](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part-1e0)
 
 ## Lab Environment
-C2 server - Ubuntu Server 22.04.01 iso running on VMware
+Attacker/C2 server - Ubuntu Server 22.04.01 iso running on VMware
 
-victim - Windows 11 VM with a sensor linked to LimaCharlie running on VMware
+Victim - Windows 11 VM with a sensor linked to LimaCharlie running on VMware
 
 ## Machines Setup
 ### Windows (victim)
