@@ -1,4 +1,4 @@
-# EDR Home Lab: C2 Attack and Defence 
+# EDR Home Lab: Attack and Defence  
 This project simulates an attack from a Commmand & Control (C2) server using 'Sliver' on a Windows Endpoint that utilizes the LimaCharlie EDR solution. 
 
 [Eric Capuano's Guide](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-part-1e0)
